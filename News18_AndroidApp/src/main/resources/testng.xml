@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG">
+	<test name="TestCuke" preserve-order="true">
+		<parameter name="myName" value="true" />
+		<classes>
+			<class name="com.news18.runner.RunCukesTest"/>
+		</classes>
+	</test>
+</suite>

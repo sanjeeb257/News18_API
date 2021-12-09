@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNG" duration-ms="1118140" started-at="2021-12-09T12:34:12Z" finished-at="2021-12-09T12:52:50Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.news18.runner.RunCukesTest@578486a3]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="TestCuke" duration-ms="1118140" started-at="2021-12-09T12:34:12Z" finished-at="2021-12-09T12:52:50Z">
+      <class name="com.news18.runner.RunCukesTest">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.news18.runner.RunCukesTest@578486a3]" name="cleanUp" is-config="true" duration-ms="31" started-at="2021-12-09T18:04:12Z" finished-at="2021-12-09T18:04:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.news18.runner.RunCukesTest@578486a3]" name="setUpClass" is-config="true" duration-ms="1000" started-at="2021-12-09T18:04:12Z" finished-at="2021-12-09T18:04:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="onStart()[pri:0, instance:com.news18.runner.RunCukesTest@578486a3]" name="onStart" is-config="true" duration-ms="2302" started-at="2021-12-09T18:04:13Z" finished-at="2021-12-09T18:04:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onStart -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.news18.runner.RunCukesTest@578486a3]" name="feature" duration-ms="1109928" started-at="2021-12-09T18:04:15Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-12-09T18:22:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[English : Validate Stories in all Sections by comparing Mobile Web and Mobile App]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: Got 2 mismatch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Got 2 mismatch
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: Got 2 mismatch
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.api.base.ApplicationFuncs.writeDataIntoExcel(ApplicationFuncs.java:216)
+	at com.news18.stepdefinition.Stepdefinitions_English.compare_the_stories_of_Mobile_Web_and_Mobile_App(Stepdefinitions_English.java:115)
+	at ?.Then Compare the stories of Mobile Web and Mobile App(features/A_News18_English.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="onFinish()[pri:0, instance:com.news18.runner.RunCukesTest@578486a3]" name="onFinish" is-config="true" duration-ms="349" started-at="2021-12-09T18:22:45Z" finished-at="2021-12-09T18:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFinish -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.news18.runner.RunCukesTest@578486a3]" name="tearDownClass" is-config="true" duration-ms="4245" started-at="2021-12-09T18:22:46Z" finished-at="2021-12-09T18:22:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.news18.runner.RunCukesTest -->
+    </test> <!-- TestCuke -->
+  </suite> <!-- TestNG -->
+</testng-results>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG]">
+  <parameter name="myName" value="true"/>
+  <test name="TestCuke(failed)">
+    <parameter name="myName" value="true"/>
+    <classes>
+      <class name="com.news18.runner.RunCukesTest">
+        <methods>
+          <include name="onFinish"/>
+          <include name="setUpClass"/>
+          <include name="onStart"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="cleanUp"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.news18.runner.RunCukesTest -->
+    </classes>
+  </test> <!-- TestCuke(failed) -->
+</suite> <!-- Failed suite [TestNG] -->
